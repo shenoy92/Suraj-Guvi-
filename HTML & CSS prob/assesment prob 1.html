@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+        }
+        form {
+            background-color: #e9ecef;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        label {
+            font-size: 22px;
+        }
+        input,
+        select {
+            border: none;
+            outline: none;
+            height: 46px;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 16px;
+        }
+        select {
+            width: 218px;
+        }
+        .material-icons {
+            font-size: 26px;
+            padding: 8px;
+        }
+        .input-container,
+        .input-wrapper {
+            display: flex;
+            align-items: center;
+        }
+        .input-container {
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .input-wrapper {
+            border: 1px solid #d1d6dc;
+            border-radius: 4px;
+            max-width: 300px;
+        }
+        button {
+            margin: 0 auto;
+            display: block;
+            width: 100px;
+            height: 40px;
+            margin-top: 40px;
+        }
+        @media only screen and (max-width: 600px) {
+            .input-container {
+               display: block;
+            }
+            .input-wrapper {
+                max-width: none;
+            }
+            label {
+                margin-bottom: 10px;
+                display: block;
+            }
+            select {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="getData()">
+        <div class="input-container">
+            <label for="fullName">Full Name</label>
+            <div class="input-wrapper">
+                <span class="material-icons">account_circle</span>
+                <input id="fullName" placeholder="Full Name" type="text" required>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <label for="address-line-1">Address Line 1</label>
+            <div class="input-wrapper">
+                <span class="material-icons">contact_page</span>
+                <input id="address-line-1" placeholder="Address Line 1" type="text" required>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <label for="address-line-2">Address Line 2</label>
+            <div class="input-wrapper">
+                <span class="material-icons">contact_page</span>
+                <input id="address-line-2" placeholder="Address Line 2" type="text" required>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <label for="City">City</label>
+            <div class="input-wrapper">
+                <span class="material-icons">subject</span>
+                <input id="City" placeholder="City" type="text" required>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <label for="State">State/Province/Region</label>
+            <div class="input-wrapper">
+                <span class="material-icons">where_to_vote</span>
+                <input id="State" placeholder="State" type="text" required>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <label for="pinCode">Pin Code/ZIP</label>
+            <div class="input-wrapper">
+                <span class="material-icons">mail</span>
+                <input id="pinCode" placeholder="Pin Code ZIP" type="text" required>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <label>Country</label>
+            <div class="input-wrapper">
+                <span class="material-icons">outlined_flag</span>
+                <select>
+					<option  value="Afghanistan">Afghanistan</option>
+					<option value="India">India</option>
+				</select>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <label for="email">Email</label>
+            <div class="input-wrapper">
+                <span class="material-icons">drafts</span>
+                <input id="email" placeholder="Email" type="text" required>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <label for="phone">Phone Number</label>
+            <div class="input-wrapper">
+                <span class="material-icons">phone</span>
+                <input id="phone" placeholder="Phone Number" type="text" required>
+            </div>
+        </div>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <script>
+        function getData() {
+             alert('thank you');
+        }
+    </script>
+</body>
+</html>
