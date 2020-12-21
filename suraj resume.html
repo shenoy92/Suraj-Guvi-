@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+         
+
+        body {
+            width: 90%;
+            margin:0 auto;
+            padding: 20px 20px;
+        }
+        .main {
+            background-color: #565656;
+            width: 100%;
+            height: 260px;
+            opacity: 0.9;
+        }
+        .sub-main {
+            background-color: #eeeeee;
+            width: 100%;
+            height: 30px;
+            position: relative;
+            top: 30px;
+        }
+        #name {
+            width: 40%;
+            background-color:#fabe28;
+            padding: 1%;
+            color: #2a251a;
+            border-radius: 8px;
+            font-size: 300%;
+            text-align: center;
+            position: relative;
+            bottom: 25px;
+            margin: 0 auto;
+        }
+        .pic {
+            border-radius: 50%;
+            border: 4px dotted rgb(235, 200, 45);
+            height: 150px;
+            width: 200px;
+            position: relative;
+            display: block;
+            margin:0 auto;
+            top:40px;
+        }
+        .address{
+            text-align: center;
+        }
+
+        .icon{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 4px dotted rgb(235, 200, 45);
+            float: left;
+            opacity: 0.8;
+        }
+        table{
+            width: 100%;
+        }
+        .content-3{
+            padding: 40px;
+            text-align: justify;
+        }
+        td{
+            width: 50%;
+            padding: 0px;
+            word-wrap: break-word;
+            
+        }
+        .profile {
+            border-right: 1.5px solid grey;
+        }
+        .left{
+            text-align: left;
+        }
+        .right{
+            text-align: right;
+        }
+        .section-heading{
+            color: rgb(94, 92, 92);
+            padding-left: 60px;
+            padding-top: 8px;
+            position: relative;
+            font-size: 30px;
+            font-weight: 400;
+        }
+        .section-content{
+            color: rgba(0, 0, 0, 0.945);
+        }
+        .sub-heading{
+            text-align: center;
+        }
+
+        #work-experience{
+        	    position: relative;
+    			top: -35px;
+        }
+
+        h4{
+            color: rgba(0, 0, 0, 0.836);
+        }
+
+        input[type=range]{
+            appearance: none;
+            width: 200px;
+            height: 6px;
+            background: linear-gradient(to right,rgb(235, 200, 45) 0%, rgb(245, 240, 221) 80%);
+        }
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            border: 1px solid grey;
+            height: 14px;
+            width: 14px;
+            border-radius: 15px;
+            background: #FFFFFF;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class='main'>
+            <img class="pic" src="https://static.toiimg.com/thumb/msid-71722862,width-640,resizemode-4,imgsize-60418/71722862.jpg">
+            <div class="sub-main">
+                <h1 id='name'>BRIAN DUDEY</h1>
+            </div>
+        </div>
+    </header>
+        <div>
+            <p class="address"> N.Damen Avenue, Chicago 99999| 999–999–9999 | hello@kickresume.com |
+                www.kickresume.com </p>
+            <hr>
+        </div>
+
+    <table class="content">
+        <tbody>
+            <tr>
+                <td class="profile">
+                    <section>
+                        <img class="icon" src=https://previews.123rf.com/images/tuktukdesign/tuktukdesign1805/tuktukdesign180500115/101624874-profile-icon-vector-male-user-person-avatar-in-flat-color-glyph-pictogram-illustration.jpg alt="profile photo">
+                        <h2 class="section-heading">Profile</h2>
+                        <div class="section-content">
+                            <p>Innovative optimized solution seeker. Excited to be at the deployment phase of my new
+                                career as a web developer. I am ambitious, adventurous, assiduos, animated, and a
+                                literation advocate.
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <img class="icon" src=https://cdn.iconscout.com/icon/premium/png-512-thumb/skills-6-912746.png>
+                        <h2 class="section-heading">Skills</h2>
+                        <div>
+                            <h4 class="sub-heading">Technical Skills</h4>
+                            <table>
+                                <tr>
+                                    <td>JavaScript</td>
+                                    <td>
+                                        <input type="range" min="1" max="100" value="80" disabled>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CSS</td>
+                                    <td>
+                                        <input type="range" min="1" max="100" value="80" disabled>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>HTML</td>
+                                    <td>
+                                        <input type="range" min="1" max="100" value="60" disabled>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>React</td>
+                                    <td>
+                                        <input type="range" min="1" max="100" value="60" disabled>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Redux</td>
+                                    <td>
+                                        <input type="range" min="1" max="100" value="80" disabled>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Mongo</td>
+                                    <td>
+                                        <input type="range" min="1" max="100" value="80" disabled>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Deployment</td>
+                                    <td>
+                                        <input type="range" min="1" max="100" value="100" disabled>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div>
+                            <h4 class="sub-heading">Additional Skills</h4>
+                            <table>
+                                <tr>
+                                    <td>Project Management</td>
+                                    <td>
+                                        <input type="range" min="1" max="100" value="100" disabled>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Recruitment</td>
+                                    <td>
+                                        <input type="range" min="1" max="100" value="80" disabled>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bussiness Development</td>
+                                    <td>
+                                        <input type="range" min="1" max="100" value="100" disabled>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Editing</td>
+                                    <td>
+                                        <input type="range" min="1" max="100" value="80" disabled>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Fundraising</td>
+                                    <td>
+                                        <input type="range" min="1" max="100" value="100" disabled>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
+                    <section>
+                        <img class="icon" src=https://www.clipartmax.com/png/middle/340-3403177_briefcase-work-experience-icon-for-resume.png>
+                        <h2 class="section-heading">Work Experience</h2>
+                        <table>
+                            <tr>
+                                <td class="left">
+                                    <h4>Event Manager</h4>
+                                </td>
+                                <td class="right">03/2014–02/2017</td>
+                            </tr>
+                        </table>
+                        C3 Presents, Washington DC
+                        <ul>
+                            <li>Lead and execute all phases of event planning and production spanning
+                                committee recruitment,training,vendor relationships and on-site facilitation
+                            </li>
+                            <li>Brought new business to the organization through relentless networking and
+                                stewardship which helped the complany win the bid for the state Department
+                                Summit on the Middle East and the companies largest civic event to date, the
+                                United State of Women</li>
+                            <li>Excercise fiscal control over budget creation, tracking and reporting Collaborate with
+                                employees at all organizational levels to advance cohesive operations</li>
+                        </ul>
+                    </section>
+                </td>
+     
+                <td class="content-3">
+                    <section id=work-experience>
+                        <img class="icon" src=https://www.clipartmax.com/png/middle/340-3403177_briefcase-work-experience-icon-for-resume.png>
+                        <h2 class="section-heading">Work Experience</h2>
+                        <table>
+                            <tr>
+                                <td class="left">
+                                    <h4>Community Relations Manager</h4>
+                                </td>
+                                <td class="right"> 06/2011–01/2014</td>
+                            </tr>
+                        </table>
+                        Gay & Lesbian Elder Housing, Los Angeles
+                        <ul>
+                            <li>Arranging presentations and pitch deck</li>
+                            <li> Designing a PR plan and establishing important focus points. </li>
+                            <li> Designing, creating and managing content across multiple communication platforms. </li>
+                            <li> Building relationships with key media players. </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <img class="icon" src=https://www.pngfind.com/pngs/m/221-2219548_education-icon-png-education-logo-white-png-transparent.png alt="icon">
+                        <h2 class="section-heading">Education</h2>
+                        <table>
+                            <tr>
+                                <td class="left">
+                                    <h4>Engineering Immersion Program</h4>
+                                </td>
+                                <td class="right">11/2018–06/2018</td>
+                            </tr>
+                        </table>
+                        Thinkful, Chicago, IL
+                        <p>Project-focused intensive program with emphasis
+                            on Mongo, Express, React, and JavaScript (MERN)
+                            technical stack.
+                        </p>
+                        <ul>
+                            <li>Developed a full-stack web application,
+                                "RenewU'', using React that allows users to
+                                explore various aspects of meditation. Users
+                                progress is stored on a backend created using
+                                Node and MongobB.</li>
+                            <li>Developed a language learning app, "Foodie
+                                Phonetics" using spaced repetition and a linked
+                                list data structure. React was used to create
+                                the front end components while Node and
+                                Mongo were used to create a backend that
+                                stores user data.
+                            </li>
+                            <li>Developed a concierge app, "Pley', for
+                                individuals looking for curated suggestions
+                                when visiting a new place. React was used to
+                                develop the front end which includes realtime
+                                chat, drag and drop and variety of advanced
+                                features. The backend, built using Node,
+                                Express, and Mongo, takes advantage of well
+                                developed RESTful API, Geospatial searching,
+                                and user authentication with JWT.</li>
+                        </ul>
+                        <table>
+                            <tr>
+                                <td class="left">
+                                    <h4>BA, English </h4>
+                                </td>
+                                <td class="right">09/2001–09/2005</td>
+                            </tr>
+                        </table>
+                        University of California, Los Angles
+                    </section>
+                </td>
+            </tr>
+    
+              
+        </tbody>
+    </table>
+  
+</body>
+
+</html>
