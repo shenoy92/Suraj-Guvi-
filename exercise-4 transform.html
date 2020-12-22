@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-4</title>
+    <style>
+        body {
+            margin: 0;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h3, p {
+            margin: 0;
+        }
+
+        .section-1,
+        .section-2,
+        .section-3,
+        .section-4,
+        .section-5,
+        .section-6,
+        .section-7,
+        .section-8,
+        .section-9,
+        .section-10 {
+            height: 450px;
+        }
+
+        .section-1 {
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            background-image: url('https://i.pinimg.com/originals/91/dd/d5/91ddd5d8843a202b2a77dc52b0326d69.jpg');
+        }
+
+        .section-3,
+        .section-5,
+        .section-7,
+        .section-9 {
+            position: relative;
+            top: -42px;
+            transform: skewY(-4deg);
+            background-image: url('https://i.pinimg.com/originals/91/dd/d5/91ddd5d8843a202b2a77dc52b0326d69.jpg');
+        }
+
+        .section-2,
+        .section-4,
+        .section-6,
+        .section-8 {
+            position: relative;
+            top: -42px;
+            transform: skewY(-4deg);
+            background-image: url('https://png.pngtree.com/thumb_back/fh260/back_pic/03/54/79/53579b28cb9ae3e.jpg');
+        }
+
+        .section-9 {
+            z-index: 1;
+        }
+
+        .section-10 {
+            background-color: grey;
+            position: relative;
+            top: -100px;
+        }
+
+        .section-10-top-piece {
+            position: absolute;
+            top: 58px;
+            left: 0;
+            right: 0;
+            height: 78px;
+            transform: skewY(-4deg);
+            background-color: grey;
+            z-index: 3;
+        }
+
+        .card {
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            height: 4500px;
+            position: relative;
+        }
+
+        .content {
+            position: absolute;
+            top: 0;
+            bottom: 403px;
+            left: 0;
+            right: 0;
+            margin: 50px;
+            border: 2px dotted #ffffff;
+            border-radius: 40px;
+            border-bottom: none;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            z-index: 2;
+        }
+
+        .border-top-center-label {
+            display: block;
+            color: #ffffff;
+            font-size: 24px;
+            background-color: #111111;
+            width: 130px;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: -10px;
+        }
+
+        .section-1-content {
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 380px;
+            font-size: 50px;
+            letter-spacing: 10px;
+        }
+
+        .section-2-content,
+        .section-3-content,
+        .section-4-content,
+        .section-5-content,
+        .section-6-content,
+        .section-7-content,
+        .section-8-content,
+        .section-9-content {
+            font-size: 40px;
+            padding: 40px 120px;
+            height: 380px;
+        }
+
+        .section-2-content,
+        .section-4-content,
+        .section-5-content,
+        .section-6-content {
+            color: #111;
+        }
+
+        .section-3-content,
+        .section-5-content,
+        .section-7-content,
+        .section-9-content {
+            color: #fff;
+            padding-left: 300px;
+        }
+
+        .section-2-content > p,
+        .section-3-content > p,
+        .section-4-content > p,
+        .section-5-content > p,
+        .section-6-content > p,
+        .section-7-content > p,
+        .section-8-content > p,
+        .section-9-content > p {
+                font-size: 28px;
+        }
+
+        .section-10-content-container {
+            display: flex;
+            z-index: 19;
+        }
+
+        .section-10-content-container-left {
+            flex-basis: 70%;
+            z-index: 19;
+        }
+
+        .section-10-content-container-left > p:first-child {
+            z-index: 19;
+            font-size: 26px;
+            margin-bottom: 70px;
+        }
+
+        .section-10-content-container-left > p:last-child {
+            font-size: 20px;
+        }
+
+        .section-10-content-container-right {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 30%;
+            align-items: flex-end;
+        }
+
+        .section-10-content-container-right > h3 {
+            font-size: 48px;
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="section-1"></div>
+        <div class="section-2"></div>
+        <div class="section-3"></div>
+        <div class="section-4"></div>
+        <div class="section-5"></div>
+        <div class="section-6"></div>
+        <div class="section-7"></div>
+        <div class="section-8"></div>
+        <div class="section-9"></div>
+        <div class="section-10">
+            <div class="section-10-top-piece"></div>
+        </div>
+
+        <div class="content">
+            <div class="border-top-center-label">IFACTORY</div>
+            <div class="section-1-content">
+                <div>SCROLLING IN WEB DESIGN</div>
+                <div>THE LONG & THE SHORT OF IT</div>
+            </div>
+            <div class="section-2-content">
+                <div>LONG SCROLL: THE GOOD STUFF</div>
+                <div>VIRTUAL CREATIVITY</div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                   when an unknown printer took a galley of type and scrambled.
+                </p>
+            </div>
+            <div class="section-3-content">
+                <div>STORY-TELLING</div>
+                <div>OPPORTUNITIES</div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                   when an unknown printer took a galley of type and scrambled.
+                </p>
+            </div>
+            <div class="section-4-content">
+                <div>SIMPLE INTERFACE FOR</div>
+                <div>SMART DEVICE USERS</div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                   when an unknown printer took a galley of type and scrambled.
+                </p>
+            </div>
+            <div class="section-5-content">
+                <div>PUNCHY, STRAIGHT TO</div>
+                <div>THE POINT MESSAGING</div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                   when an unknown printer took a galley of type and scrambled.
+                </p>
+            </div>
+            <div class="section-6-content">
+                <div>LONG SCROLL: THE NOT SO GOOD STUFF</div>
+                <div>YOU NEED TO BE SEARCH ENGINBE SAVVY</div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                   when an unknown printer took a galley of type and scrambled.
+                </p>
+            </div>
+            <div class="section-7-content">
+                <div>STORY-TELLING</div>
+                <div>OPPORTUNITIES</div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                   when an unknown printer took a galley of type and scrambled.
+                </p>
+            </div>
+            <div class="section-8-content">
+                <div>SLOWER LOAD TIMES</div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                   when an unknown printer took a galley of type and scrambled.
+                </p>
+            </div>
+            <div class="section-9-content">
+                <div>AWKWARD NAVIGATION</div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                   when an unknown printer took a galley of type and scrambled.
+                </p>
+            </div>
+            <div class="section-10-content">
+                <div class="section-10-content-container">
+                    <div class="section-10-content-container-left">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                     </div>
+                     <div class="section-10-content-container-right">
+                         <h3>IFACTORY</h3>
+                         <p>Lorem Ipsum is simply dummy text</p>
+                         <p>ummy text ever since the 1500s</p>
+                         <p>Lorem Ipsum is simply dummy text</p>
+                         <p>ummy text ever since the 1500s</p>
+                         <p>Lorem Ipsum is simply dummy text</p>
+                     </div>
+                </div>
+                
+            </div>
+        </div> 
+    </div>
+</body>
+</html>
