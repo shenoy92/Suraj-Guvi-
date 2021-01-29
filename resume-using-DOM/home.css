@@ -1,0 +1,161 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.banner-bg-wrapper {
+    position: relative;
+}
+
+.banner-bg-strip-one {
+    height: 200px;
+    background-color: #565656;
+}
+
+.banner-bg-strip-two {
+    height: 20px;
+    background-color: #ffffff;
+}
+
+.banner-bg-strip-three {
+    height: 20px;
+    background-color: #565656;
+}
+
+.profile-image {
+    border-radius: 50%;
+    border: 4px dotted rgb(235, 200, 45);
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    top: 40px;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+}
+
+.profile-name {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    top: 166px;
+    left: 0;
+    right: 0;
+    background-color: #f9bf28;
+    font-size: 30px;
+    width: 240px;
+    text-align: center;
+    padding: 16px;
+    border-radius: 4px;
+}
+
+.profile-address {
+    border-bottom: 1px solid #d5d5d5;
+    padding: 6px 0;
+    text-align: center;
+}
+
+/* Content wrapper  */
+.content-wrapper {
+    display: flex;
+}
+
+/* Content wrapper left  */
+.content-wrapper-left {
+    border-right: 1px solid #d5d5d5;
+    padding: 4%;
+    width: 44%;
+}
+
+/* Content wrapper right  */
+.content-wrapper-right {
+    padding: 4%;
+    width: 44%;
+}
+
+/******************* content-header ****************************/
+.content-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.content-header img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 4px dotted rgb(235, 200, 45);
+    margin-right: 10px;
+}
+
+.content-header span {
+    font-size: 28px;
+    color: #646464;
+}
+
+/******************* content-sub-header ****************************/
+.content-sub-header-one-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-sub-header-one-line-left-content {
+    font-weight: bold;
+    max-width: 180px;
+}
+
+/******************* content-list ****************************/
+.content-list {
+    text-align: justify;
+}
+
+/****************** PROFILE *********************/
+.profile-content {
+    text-align: justify;
+}
+
+ /*************************** SKILLS *************************  */
+.skills {
+    margin-bottom: 10px;
+}
+
+.technical-skills-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.technical-skill {
+    display: flex;
+    align-items: center;
+}
+
+.technical-skill span {
+    width: 50%;
+}
+
+.skills-range-silder {
+    appearance: none;
+    width: 50%;
+    height: 6px;
+    background: linear-gradient(to right,rgb(235, 200, 45) 0%, rgb(245, 240, 221) 80%);
+}
+
+.skills-range-silder::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid grey;
+    height: 14px;
+    width: 14px;
+    border-radius: 15px;
+    background: #FFFFFF;
+}
