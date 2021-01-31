@@ -48,14 +48,20 @@ body {
     word-break: break-all;
 }
 
-.output .previous-operand {
-	color: rgb(255,255,255,.75);
-	font-size:1.5rem;
-}
-
-
-
 #screen {
 	color: white;
 	font-size:2.5rem;
+}
+
+ @media only screen and (max-width: 510px) {
+  	.calculator-grid{
+		display:grid;
+		justify-content:center;
+		align-content:center;
+		grid-template-rows: minmax(80px,80px) repeat(5,80px) ;
+		grid-template-columns:minmax(80px,80px) repeat(4,80px);
+	}
+
+
+          
 }
