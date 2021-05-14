@@ -1,0 +1,20 @@
+#homePageBody{
+   background-color:#444139;
+}
+
+#img {
+    position:absolute;
+    width:500px;
+    height:100%
+}
+
+#start {
+    position:relative;
+    top:97px;
+    color:White;
+    background-color:#af764b;
+    font-size:20px;
+    padding: 4px 50px;
+    border:5px solid black;
+    border-radius: 12px;
+}
